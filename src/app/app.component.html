@@ -1,0 +1,31 @@
+<div class="bckgrnd">
+  <div (click)="logOut()" style="  padding: 5%;">
+    <img src="assets/logo-mielabelo@2x.png" width="100%"/>
+  </div>
+
+  <div align="center" style="display: flex;
+                              color: white;
+                              flex-wrap: wrap;
+                              align-items: center;
+                              justify-content: center;
+                              ">
+    <div align="center">
+      <br>
+      <qrcode [qrdata]="myVcardQrCode" [width]="180" [errorCorrectionLevel]="'M'" [allowEmptyString]="true"></qrcode>
+      <br>
+    </div>
+    <div align="center"  style="padding: 5%">
+<!--
+      <b>{{ this.fullName }}</b><br>
+      {{ this.myTitle }}<br>
+      {{ this.phone }}<br>
+      {{ myEmail }}<br>
+      <br>-->
+      <b>Etienne DARQUENNES</b><br>
+      Senior Advisor<br>
+      +32 496 80 99 93<br>
+      etienne.darquennes@mielabelo.com<br>
+
+    </div>
+  </div>
+</div>
